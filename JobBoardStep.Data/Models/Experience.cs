@@ -12,5 +12,6 @@ namespace JobBoardStep.Data.Models
         public DateTime CareateDate { get; set; }
         public DateTime UpdateDate { get; set; }
         public bool ExperienceStatus { get; set; }
+        public virtual ICollection<ExperienceTranslate>? ExperienceTranslate { get; set; }
     }
 }
