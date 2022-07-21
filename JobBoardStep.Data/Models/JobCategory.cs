@@ -11,5 +11,6 @@ namespace JobBoardStep.Data.Models
         public int JobCatId { get; set; }
         public string? JobCatName { get; set; }
         public virtual ICollection<JobCategoryTranslate>? JobCategoryTranslate { get; set; }
+        public virtual ICollection<Job>? Jobs { get; set; }
     }
 }

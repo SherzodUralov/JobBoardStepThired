@@ -20,5 +20,7 @@ namespace JobBoardStep.Data.Models
         public int ExperienceId { get; set; }
         public User? User { get; set; }
         public int UserId { get; set; }
+        public JobCategory? JobCategory { get; set; }
+        public int JobCateId { get; set; }
     }
 }
