@@ -11,6 +11,7 @@ namespace JobBoardStep.Data.Models
         public int LanguageId { get; set; }
         public string? LanguageName { get; set; }
         public bool LanguageStatus { get; set; }
+        public virtual ICollection<JobTypeTranslate>? JobTypeTranslates { get; set; }
 
     }
 }
