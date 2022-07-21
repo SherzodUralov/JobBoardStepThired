@@ -16,6 +16,14 @@ namespace JobBoardStep.Data.Models
         public string? PassportNumber { get; set; }
         public DateTime BirthDate { get; set; }
         public DateTime CreateDate { get; set; }
+        public virtual ICollection<Job>? Jobs { get; set; }
+        public Information? Information { get; set; }
+        public int InformationId { get; set; }
+        public Region? Region { get; set; }
+        public int RegionId { get; set; }
+        public UserType? UserType { get; set; }
+        public int UserTypeId { get; set; }
+        public virtual ICollection<Application>? Applications { get; set; }
 
     }
 }

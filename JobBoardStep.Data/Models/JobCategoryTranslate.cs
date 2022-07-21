@@ -10,6 +10,9 @@ namespace JobBoardStep.Data.Models
     {
         public int JobCatTranslateId { get; set; }
         public string? JobCatName { get; set; }
-
+        public Language? Language { get; set; }
+        public int LanguageId { get; set; }
+        public JobCategory? JobCategory { get; set; }
+        public int JobCatId { get; set; }
     }
 }
