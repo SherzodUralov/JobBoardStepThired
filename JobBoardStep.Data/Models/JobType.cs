@@ -13,5 +13,6 @@ namespace JobBoardStep.Data.Models
         public DateTime UpdateDate { get; set; }
         public bool JobTypeStatus { get; set; }
         public virtual ICollection<JobTypeTranslate>? JobTypeTranslates { get; set; }
+        public virtual ICollection<Job>? Jobs { get; set; }
     }
 }
