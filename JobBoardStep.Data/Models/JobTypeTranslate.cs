@@ -12,6 +12,9 @@ namespace JobBoardStep.Data.Models
         public string? JobTypeTranslateName { get; set; }
         public Language? Language { get; set; }
         public int LanguageId { get; set; }
+        public JobType? JobType { get; set; }
+        public int JobTypeId { get; set; }
+
 
     }
 }
