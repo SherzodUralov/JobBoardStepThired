@@ -10,6 +10,7 @@ namespace JobBoardStep.Data.Models
     {
         public int UserTypeId { get; set; }
         public string? UserTypeName { get; set; }
+        public virtual ICollection<User>? Users { get; set; }
 
     }
 }

@@ -12,6 +12,8 @@ namespace JobBoardStep.Data.Models
         public DateTime CreateDate { get; set; }
         public DateTime UpdateDate { get; set; }
         public bool ApplicationStatus { get; set; }
+        public Job? Job { get; set; }
+        public int JobId { get; set; }
 
     }
 }
