@@ -8,6 +8,10 @@ namespace JobBoardStep.Data.Models
 {
     public class Information
     {
+        public int UserTypeId { get; set; }
+        public DateTime CreateDate { get; set; }
+        public DateTime UpdateDate { get; set; }
+        public bool InformationStatus { get; set; }
 
     }
 }
