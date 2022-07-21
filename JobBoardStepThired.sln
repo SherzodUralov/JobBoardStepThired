@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobBoardStep", "JobBoardStep\JobBoardStep.csproj", "{505EF2A5-87FB-455A-8FBB-7DB237009F45}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobBoardStep.Data", "JobBoardStep.Data\JobBoardStep.Data.csproj", "{883351C7-0348-44B7-BA43-ACA785E3FBD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{505EF2A5-87FB-455A-8FBB-7DB237009F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{505EF2A5-87FB-455A-8FBB-7DB237009F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{505EF2A5-87FB-455A-8FBB-7DB237009F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{883351C7-0348-44B7-BA43-ACA785E3FBD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{883351C7-0348-44B7-BA43-ACA785E3FBD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{883351C7-0348-44B7-BA43-ACA785E3FBD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{883351C7-0348-44B7-BA43-ACA785E3FBD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
