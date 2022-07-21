@@ -11,6 +11,6 @@ namespace JobBoardStep.Data.Models
         public int ExperienceId { get; set; }
         public DateTime CareateDate { get; set; }
         public DateTime UpdateDate { get; set; }
-        public bool MyProperty { get; set; }
+        public bool ExperienceStatus { get; set; }
     }
 }
