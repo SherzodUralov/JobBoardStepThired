@@ -23,6 +23,7 @@ namespace JobBoardStep.Data.Models
         public int RegionId { get; set; }
         public UserType? UserType { get; set; }
         public int UserTypeId { get; set; }
+        public virtual ICollection<Application>? Applications { get; set; }
 
     }
 }
