@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace JobBoardStep.Data.Models
 {
-    public class RegionTranslate
+    public class InformationTranslate
     {
-        public int RegionTranslateId { get; set; }
-        public string? RegionTranslateName { get; set; }
-
+        public int InforTransId { get; set; }
+        public string? InformationTranslateName { get; set; }
     }
 }

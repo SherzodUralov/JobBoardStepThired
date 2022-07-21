@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace JobBoardStep.Data.Models
 {
-    public class Region
+    public class Application
     {
-        public int RegionId { get; set; }
+        public int ApplicationId { get; set; }
         public DateTime CreateDate { get; set; }
         public DateTime UpdateDate { get; set; }
-        public bool RegionStatus { get; set; }
-
+        public bool ApplicationStatus { get; set; }
 
     }
 }
