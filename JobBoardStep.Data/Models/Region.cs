@@ -14,6 +14,6 @@ namespace JobBoardStep.Data.Models
         public bool RegionStatus { get; set; }
         public virtual ICollection<RegionTranslate>? RegionTranslates { get; set; }
 
-
+        public virtual ICollection<User>? Users { get; set; }
     }
 }
