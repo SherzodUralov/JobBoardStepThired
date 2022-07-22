@@ -18,4 +18,9 @@
     <ProjectReference Include="..\JobBoardStep.Data\JobBoardStep.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Application\" />
+    <Folder Include="Views\User\" />
+  </ItemGroup>
+
 </Project>
