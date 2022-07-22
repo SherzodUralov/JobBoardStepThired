@@ -14,7 +14,7 @@ namespace JobBoardStep.Data.Repository
         Task AddAsync(Job job);
         Task Update(Job job);
         Task DeleteAsync(int id);
-
+        
 
     }
 }
