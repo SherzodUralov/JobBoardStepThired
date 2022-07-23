@@ -1,5 +1,6 @@
 ﻿using JobBoardStep.Data.Context;
 using JobBoardStep.Data.Models;
+using JobBoardStep.Data.ViewModels;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -35,6 +36,26 @@ namespace JobBoardStep.Data.Repository
 #pragma warning disable CS8603 // Possible null reference return.
             return user;
 #pragma warning restore CS8603 // Possible null reference return.
+        }
+
+        public IEnumerable<UserIndexViewModel> GetAll()
+        {
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+            var model = context.Users.Select(x => new UserIndexViewModel
+            {
+                UserId = x.UserId,
+                FirstName = x.FirstName,
+                LastName = x.LastName,
+                Email = x.Email,
+                PassportNumber = x.PassportNumber,
+                BirthDate = x.BirthDate,
+                CreateDate = x.CreateDate,
+                UserTypeName = x.UserType.UserTypeName,
+                RegionName = x.RegionTranslate.Name,
+                InformationName = x.InformationTranslate.Name
+            });
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
+            return model;
         }
 
         public async Task<IEnumerable<User>> GetByAll()

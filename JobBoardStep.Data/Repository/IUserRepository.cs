@@ -1,4 +1,5 @@
 ﻿using JobBoardStep.Data.Models;
+using JobBoardStep.Data.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace JobBoardStep.Data.Repository
         Task<User> Create(User user);
         Task<User> Update(User newuser);
         User Delete(int id);
-        IEnumerable<> GETAll();
+        IEnumerable<UserIndexViewModel> GetAll();
 
 
     }

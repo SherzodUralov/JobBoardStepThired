@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,11 +9,12 @@ namespace JobBoardStep.Data.Models
 {
     public class InformationTranslate
     {
-        public int InforTransId { get; set; }
-        public string? InformationTranslateName { get; set; }
-        public Language? Language { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
         public int LanguageId { get; set; }
-        public Information? Information { get; set; }
+        public Language Language { get; set; }
         public int InformationId { get; set; }
+        public Information Information { get; set; }
+        public List<User> Users { get; set; }
     }
 }

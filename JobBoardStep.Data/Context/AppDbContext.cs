@@ -18,7 +18,60 @@ namespace JobBoardStep.Data.Context
         {
 
         }
-       
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder) 
+        {
+            modelBuilder.Entity<JobTypeTranslate>()
+                .HasOne(x => x.Language)
+                .WithMany(t => t.JobTypeTranslates)
+                .HasForeignKey(w => w.LanguageId);
+
+            modelBuilder.Entity<JobTypeTranslate>()
+               .HasOne(x => x.JobType)
+               .WithMany(t => t.JobTypeTranslates)
+               .HasForeignKey(w => w.JobTypeId);
+
+            modelBuilder.Entity<JobCategoryTranslate>()
+               .HasOne(x => x.Language)
+               .WithMany(t => t.JobCategoryTranslates)
+               .HasForeignKey(w => w.LanguageId);
+
+            modelBuilder.Entity<JobCategoryTranslate>()
+               .HasOne(x => x.JobCategory)
+               .WithMany(t => t.JobCategoryTranslates)
+               .HasForeignKey(w => w.JobCatId);
+
+            modelBuilder.Entity<ExperienceTranslate>()
+               .HasOne(x => x.Language)
+               .WithMany(t => t.ExperienceTranslates)
+               .HasForeignKey(w => w.LanguageId);
+
+            modelBuilder.Entity<ExperienceTranslate>()
+              .HasOne(x => x.Experience)
+              .WithMany(t => t.ExperienceTranslates)
+              .HasForeignKey(w => w.ExperienceId);
+
+            modelBuilder.Entity<InformationTranslate>()
+              .HasOne(x => x.Language)
+              .WithMany(t => t.InformationTranslates)
+              .HasForeignKey(w => w.LanguageId);
+
+            modelBuilder.Entity<InformationTranslate>()
+              .HasOne(x => x.Information)
+              .WithMany(t => t.InformationTranslates)
+              .HasForeignKey(w => w.InformationId);
+
+            modelBuilder.Entity<RegionTranslate>()
+              .HasOne(x => x.Language)
+              .WithMany(t => t.RegionTranslates)
+              .HasForeignKey(w => w.LanguageId);
+
+            modelBuilder.Entity<RegionTranslate>()
+              .HasOne(x => x.Region)
+              .WithMany(t => t.RegionTranslates)
+              .HasForeignKey(w => w.RegionId);
+        }
+
         public DbSet<User> Users { get; set; }
         public DbSet<Job> Jobs { get; set; }
         public DbSet<Experience> Experiences { get; set; }

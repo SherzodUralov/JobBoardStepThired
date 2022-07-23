@@ -8,14 +8,14 @@ namespace JobBoardStep.Data.Models
 {
     public class Language
     {
-        public int LanguageId { get; set; }
-        public string? LanguageName { get; set; }
+        public int Id { get; set; }
+        public string LanguageName { get; set; }
         public bool LanguageStatus { get; set; }
-        public virtual ICollection<JobTypeTranslate>? JobTypeTranslates { get; set; }
-        public virtual ICollection<RegionTranslate>? RegionTranslates { get; set; }
-        public virtual ICollection<InformationTranslate>? InformationTranslate { get; set; }
-        public virtual ICollection<ExperienceTranslate>? ExperienceTranslate { get; set; }
-        public virtual ICollection<JobCategoryTranslate>? JobCategoryTranslate { get; set; }
+        public List<JobTypeTranslate> JobTypeTranslates { get; set; }
+        public List<RegionTranslate> RegionTranslates { get; set; }
+        public List<InformationTranslate> InformationTranslates { get; set; }
+        public List<ExperienceTranslate> ExperienceTranslates { get; set; }
+        public virtual List<JobCategoryTranslate> JobCategoryTranslates { get; set; }
 
 
     }

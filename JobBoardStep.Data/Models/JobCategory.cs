@@ -8,9 +8,9 @@ namespace JobBoardStep.Data.Models
 {
     public class JobCategory
     {
-        public int JobCatId { get; set; }
-        public string? JobCatName { get; set; }
-        public virtual ICollection<JobCategoryTranslate>? JobCategoryTranslate { get; set; }
-        public virtual ICollection<Job>? Jobs { get; set; }
+        public int Id { get; set; }
+        public string JobCatName { get; set; }
+        public List<JobCategoryTranslate> JobCategoryTranslates { get; set; }
+        public List<Job> Jobs { get; set; }
     }
 }

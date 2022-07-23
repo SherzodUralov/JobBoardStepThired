@@ -8,11 +8,11 @@ namespace JobBoardStep.Data.Models
 {
     public class ExperienceTranslate
     {
-        public int ExpeTranslateId { get; set; }
-        public string? ExpeTranslateName { get; set; }
-        public Language? Language { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
         public int LanguageId { get; set; }
-        public Experience? Experience { get; set; }
+        public Language Language { get; set; }
         public int ExperienceId { get; set; }
+        public Experience Experience { get; set; }
     }
 }

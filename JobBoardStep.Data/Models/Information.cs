@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,12 +9,12 @@ namespace JobBoardStep.Data.Models
 {
     public class Information
     {
-        public int UserTypeId { get; set; }
+        public int Id { get; set; }
         public DateTime CreateDate { get; set; }
         public DateTime UpdateDate { get; set; }
         public bool InformationStatus { get; set; }
-        public virtual ICollection<InformationTranslate>? InformationTranslate { get; set; }
-        public virtual ICollection<User>? Users { get; set; }
+        public List<InformationTranslate> InformationTranslates { get; set; }
+        public List<User> Users { get; set; }
 
     }
 }
