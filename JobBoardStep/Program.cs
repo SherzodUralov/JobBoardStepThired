@@ -11,6 +11,15 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
 
+
+var connectionString = builder.Configuration.GetConnectionString("WebApiDatabase");
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    options.UseMySql(connectionString,ServerVersion.AutoDetect(connectionString));
+});
+    
+ 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
